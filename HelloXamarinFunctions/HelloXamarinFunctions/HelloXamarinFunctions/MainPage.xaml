@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HelloXamarinFunctions"
+             x:Class="HelloXamarinFunctions.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <Grid BackgroundColor="LightBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Image Source="xamarin_logo.png"
+                    Margin="12,36,0,10"
+                    HorizontalOptions="Start"/>
+
+            <Label Grid.Row="1"
+                    Margin="12,0,0,10"
+                    Text="Hello Xamarin.Forms"
+                    FontSize="Large" />
+        </Grid>            
+
+        <StackLayout VerticalOptions="Center"
+                     Margin="10"
+                     HorizontalOptions="Fill"
+                     Grid.Row="1">
+
+            <Entry x:Name="FirstNameText"
+                   FontSize="Large" />
+
+            <Button x:Name="GoButton"
+                    FontSize="Small"
+                    Text="Go" />
+
+            <Label Text="Welcome to Xamarin.Forms!"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   x:Name="ResultText" />
+
+        </StackLayout>
+    </Grid>
+
+
+</ContentPage>

@@ -1,0 +1,104 @@
+<UserSettings><ApplicationIdentity version="15.0"/><ToolsOptions/><Category name="Environment_Group" RegisteredName="Environment_Group"><Category name="Environment_Toolbox" Category="{481999F2-7479-4e03-83D5-BE808BA142DF}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Toolbox" PackageName="Visual Studio Environment Package"><PropertyValue name="ShowAllTabs">false</PropertyValue><PropertyValue name="Version">1</PropertyValue><PropertyValue name="DeletedTabCount">0</PropertyValue><PropertyValue name="TabCount">0</PropertyValue><PropertyValue name="DeletedItemCount">0</PropertyValue><PropertyValue name="Item0.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item0.ID">5033D1F6D05733AEDB375BD5BA73FC79</PropertyValue><PropertyValue name="Item0.Name">-- HelloAndroid ---------------</PropertyValue><PropertyValue name="Item0.UseDefaultName">true</PropertyValue><PropertyValue name="Item0.Tab">General</PropertyValue><PropertyValue name="Item0.TabID">General</PropertyValue><PropertyValue name="Item0.OriginalTabID">General</PropertyValue><PropertyValue name="Item0.OriginalTab">General</PropertyValue><PropertyValue name="Item0.RecordType">1</PropertyValue><PropertyValue name="Item0.Data">            &lt;Grid BackgroundColor="Red"&gt;
+                &lt;Grid.RowDefinitions&gt;
+                    &lt;RowDefinition Height="Auto" /&gt;
+                    &lt;RowDefinition Height="Auto" /&gt;
+                &lt;/Grid.RowDefinitions&gt;
+
+                &lt;Image Source="xamarin_logo.png"
+                       Margin="12,36,0,10"
+                       HorizontalOptions="Start"/&gt;
+
+                &lt;Label Grid.Row="1"
+                       Margin="12,0,0,10"
+                       Text="Browse"
+                       FontSize="Large" /&gt;
+            &lt;/Grid&gt;            
+</PropertyValue><PropertyValue name="Item0.Position">1</PropertyValue><PropertyValue name="Item1.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item1.ID">F7DBCD32D3D71D81DF04C8F32127F788</PropertyValue><PropertyValue name="Item1.Name">Get button</PropertyValue><PropertyValue name="Item1.UseDefaultName">true</PropertyValue><PropertyValue name="Item1.Tab">General</PropertyValue><PropertyValue name="Item1.TabID">General</PropertyValue><PropertyValue name="Item1.OriginalTabID">General</PropertyValue><PropertyValue name="Item1.OriginalTab">General</PropertyValue><PropertyValue name="Item1.RecordType">1</PropertyValue><PropertyValue name="Item1.Data">
+            var button = FindViewById&lt;Button&gt;(Resource.Id.MyButton);
+</PropertyValue><PropertyValue name="Item1.Position">2</PropertyValue><PropertyValue name="Item2.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item2.ID">AB77F5815E40816B6425F627A8936F6C</PropertyValue><PropertyValue name="Item2.Name">Button.Click</PropertyValue><PropertyValue name="Item2.UseDefaultName">true</PropertyValue><PropertyValue name="Item2.Tab">General</PropertyValue><PropertyValue name="Item2.TabID">General</PropertyValue><PropertyValue name="Item2.OriginalTabID">General</PropertyValue><PropertyValue name="Item2.OriginalTab">General</PropertyValue><PropertyValue name="Item2.RecordType">1</PropertyValue><PropertyValue name="Item2.Data">
+            button.Click += (s, e) =&gt;
+            {
+            };
+</PropertyValue><PropertyValue name="Item2.Position">3</PropertyValue><PropertyValue name="Item3.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item3.ID">DC34CB24B345ADCAF55E03610EBF945A</PropertyValue><PropertyValue name="Item3.Name">-&gt; Button.Click</PropertyValue><PropertyValue name="Item3.UseDefaultName">true</PropertyValue><PropertyValue name="Item3.Tab">General</PropertyValue><PropertyValue name="Item3.TabID">General</PropertyValue><PropertyValue name="Item3.OriginalTabID">General</PropertyValue><PropertyValue name="Item3.OriginalTab">General</PropertyValue><PropertyValue name="Item3.RecordType">1</PropertyValue><PropertyValue name="Item3.Data">                var text = FindViewById&lt;TextView&gt;(Resource.Id.MyText);
+                text.Text = "Please wait";
+                var client = new HttpClient();
+
+                var html = await client.GetStringAsync("https://www.youtube.com/watch?v=_ntWKJoqsLQ");
+
+                var div = "&lt;div class=\"watch-view-count\"&gt;";
+
+                var index = html.IndexOf(div) + div.Length;
+                html = html.Substring(index);
+                var index2 = html.IndexOf("&lt;");
+                html = html.Substring(0, index2);
+                text.Text = html;
+</PropertyValue><PropertyValue name="Item3.Position">4</PropertyValue><PropertyValue name="Item4.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item4.ID">5033D1F6D05733AEDB375BD5BA73FC79</PropertyValue><PropertyValue name="Item4.Name">-- Xam Forms ---------------</PropertyValue><PropertyValue name="Item4.UseDefaultName">true</PropertyValue><PropertyValue name="Item4.Tab">General</PropertyValue><PropertyValue name="Item4.TabID">General</PropertyValue><PropertyValue name="Item4.OriginalTabID">General</PropertyValue><PropertyValue name="Item4.OriginalTab">General</PropertyValue><PropertyValue name="Item4.RecordType">1</PropertyValue><PropertyValue name="Item4.Data">            &lt;Grid BackgroundColor="Red"&gt;
+                &lt;Grid.RowDefinitions&gt;
+                    &lt;RowDefinition Height="Auto" /&gt;
+                    &lt;RowDefinition Height="Auto" /&gt;
+                &lt;/Grid.RowDefinitions&gt;
+
+                &lt;Image Source="xamarin_logo.png"
+                       Margin="12,36,0,10"
+                       HorizontalOptions="Start"/&gt;
+
+                &lt;Label Grid.Row="1"
+                       Margin="12,0,0,10"
+                       Text="Browse"
+                       FontSize="Large" /&gt;
+            &lt;/Grid&gt;            
+</PropertyValue><PropertyValue name="Item4.Position">5</PropertyValue><PropertyValue name="Item5.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item5.ID">D2F3C9205A1AEDC95C9DD83E0E6C550E</PropertyValue><PropertyValue name="Item5.Name">XAML UI</PropertyValue><PropertyValue name="Item5.UseDefaultName">true</PropertyValue><PropertyValue name="Item5.Tab">General</PropertyValue><PropertyValue name="Item5.TabID">General</PropertyValue><PropertyValue name="Item5.OriginalTabID">General</PropertyValue><PropertyValue name="Item5.OriginalTab">General</PropertyValue><PropertyValue name="Item5.RecordType">1</PropertyValue><PropertyValue name="Item5.Data">
+    &lt;Grid&gt;
+        &lt;Grid.RowDefinitions&gt;
+            &lt;RowDefinition Height="Auto" /&gt;
+            &lt;RowDefinition /&gt;
+        &lt;/Grid.RowDefinitions&gt;
+
+        &lt;StackLayout VerticalOptions="Center"
+                     Margin="10"
+                     HorizontalOptions="Fill"
+                     Grid.Row="1"&gt;
+
+            &lt;Entry x:Name="FirstNameText"
+                   FontSize="Large" /&gt;
+
+            &lt;Button x:Name="GoButton"
+                    FontSize="Large"
+                    Text="Go" /&gt;
+
+            &lt;Label Text="Welcome to Xamarin.Forms!"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   x:Name="ResultText" /&gt;
+
+        &lt;/StackLayout&gt;
+    &lt;/Grid&gt;
+</PropertyValue><PropertyValue name="Item5.Position">6</PropertyValue><PropertyValue name="Item6.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item6.ID">FE048BC89814797406AC21EE6A4F86CD</PropertyValue><PropertyValue name="Item6.Name">GoButton.Clicked</PropertyValue><PropertyValue name="Item6.UseDefaultName">true</PropertyValue><PropertyValue name="Item6.Tab">General</PropertyValue><PropertyValue name="Item6.TabID">General</PropertyValue><PropertyValue name="Item6.OriginalTabID">General</PropertyValue><PropertyValue name="Item6.OriginalTab">General</PropertyValue><PropertyValue name="Item6.RecordType">1</PropertyValue><PropertyValue name="Item6.Data">
+            GoButton.Clicked += async (s, e) =&gt;
+            {
+                ResultText.Text = "Please wait";
+
+                var client = new HttpClient();
+
+                var result = await client.GetStringAsync(
+                    Url.Replace("{name}", FirstNameText.Text));
+
+                ResultText.Text = result;
+            };
+</PropertyValue><PropertyValue name="Item6.Position">7</PropertyValue><PropertyValue name="Item7.DataProvider">{0A057BAD-6706-45D2-A800-683A29EC6BA3}</PropertyValue><PropertyValue name="Item7.ID">CEE112C37ECA64CBD4F8459E8CF2CE58</PropertyValue><PropertyValue name="Item7.Name">XAML Header</PropertyValue><PropertyValue name="Item7.UseDefaultName">true</PropertyValue><PropertyValue name="Item7.Tab">General</PropertyValue><PropertyValue name="Item7.TabID">General</PropertyValue><PropertyValue name="Item7.OriginalTabID">General</PropertyValue><PropertyValue name="Item7.OriginalTab">General</PropertyValue><PropertyValue name="Item7.RecordType">1</PropertyValue><PropertyValue name="Item7.Data">        
+        &lt;Grid BackgroundColor="Red"&gt;
+            &lt;Grid.RowDefinitions&gt;
+                &lt;RowDefinition Height="Auto" /&gt;
+                &lt;RowDefinition Height="Auto" /&gt;
+            &lt;/Grid.RowDefinitions&gt;
+
+            &lt;Image Source="xamarin_logo.png"
+                    Margin="12,36,0,10"
+                    HorizontalOptions="Start"/&gt;
+
+            &lt;Label Grid.Row="1"
+                    Margin="12,0,0,10"
+                    Text="Hello Xamarin.Forms"
+                    FontSize="Large" /&gt;
+        &lt;/Grid&gt;            
+</PropertyValue><PropertyValue name="Item7.Position">8</PropertyValue><PropertyValue name="ItemCount">8</PropertyValue></Category></Category></UserSettings>

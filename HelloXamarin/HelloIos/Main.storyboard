@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="250">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="249">
+            <objects>
+                <viewController id="250" sceneMemberID="viewController" customClass="MainViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="247"/>
+                        <viewControllerLayoutGuide type="bottom" id="248"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="251">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="435" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="696" width="374" height="30"/>
+                                <state key="normal" title="About this app"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="675" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="160.5" y="80" width="93" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Click me"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="676" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="20" y="178" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="664" firstItem="435" firstAttribute="leading" secondItem="251" secondAttribute="leadingMargin"/>
+                            <constraint id="665" firstItem="251" firstAttribute="trailingMargin" secondItem="435" secondAttribute="trailing"/>
+                            <constraint id="666" firstItem="248" firstAttribute="top" secondItem="435" secondAttribute="bottom" constant="10"/>
+                            <constraint id="677" firstItem="675" firstAttribute="top" secondItem="247" secondAttribute="bottom" constant="60"/>
+                            <constraint id="678" firstItem="675" firstAttribute="centerX" secondItem="251" secondAttribute="centerX"/>
+                            <constraint id="679" firstItem="676" firstAttribute="top" secondItem="675" secondAttribute="bottom" constant="60"/>
+                            <constraint id="700" firstItem="676" firstAttribute="leading" secondItem="251" secondAttribute="leadingMargin"/>
+                            <constraint id="701" firstItem="251" firstAttribute="trailingMargin" secondItem="676" secondAttribute="trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="Title" id="431" key="navigationItem"/>
+                    <connections>
+                        <outlet property="AboutButton" destination="435" id="name-outlet-435"/>
+                        <outlet property="MyButton" destination="675" id="name-outlet-675"/>
+                        <outlet property="MyLabel" destination="676" id="name-outlet-676"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="252" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="-377"/>
+        </scene>
+    </scenes>
+</document>

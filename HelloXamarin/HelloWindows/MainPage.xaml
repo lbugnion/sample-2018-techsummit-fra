@@ -1,0 +1,28 @@
+﻿<Page x:Class="HelloWindows.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:HelloWindows"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid />
+            </CommandBar.Content>
+            <AppBarButton x:Name="RefreshButton"
+                          Icon="Refresh"
+                          Label="refresh" />
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="MyText"
+                   Text="Nothing yet"
+                   VerticalAlignment="Top"
+                   FontSize="36"
+                   Margin="0,100,0,0"
+                   HorizontalAlignment="Center" />
+
+    </Grid>
+</Page>
