@@ -9,7 +9,7 @@
                    FontSize="Large" />
             <Label Text="by Laurent Bugnion"
                    FontSize="Medium" />
-            <Label Text="Copyright 2017 Microsoft"
+            <Label Text="Copyright 2018 Microsoft"
                    FontSize="Small" />
         </StackLayout>
     </ContentPage.Content>

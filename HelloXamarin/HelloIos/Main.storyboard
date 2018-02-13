@@ -1,59 +1,58 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="250">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <scene sceneID="249">
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="250" sceneMemberID="viewController" customClass="MainViewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="247"/>
-                        <viewControllerLayoutGuide type="bottom" id="248"/>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="251">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="435" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="696" width="374" height="30"/>
-                                <state key="normal" title="About this app"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="675" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="160.5" y="80" width="93" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="226" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="162" y="59" width="90" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Click me"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="676" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                <rect key="frame" x="20" y="178" width="374" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="227" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="136" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="474" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="272" y="686" width="122" height="30"/>
+                                <state key="normal" title="Show About Page"/>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint id="664" firstItem="435" firstAttribute="leading" secondItem="251" secondAttribute="leadingMargin"/>
-                            <constraint id="665" firstItem="251" firstAttribute="trailingMargin" secondItem="435" secondAttribute="trailing"/>
-                            <constraint id="666" firstItem="248" firstAttribute="top" secondItem="435" secondAttribute="bottom" constant="10"/>
-                            <constraint id="677" firstItem="675" firstAttribute="top" secondItem="247" secondAttribute="bottom" constant="60"/>
-                            <constraint id="678" firstItem="675" firstAttribute="centerX" secondItem="251" secondAttribute="centerX"/>
-                            <constraint id="679" firstItem="676" firstAttribute="top" secondItem="675" secondAttribute="bottom" constant="60"/>
-                            <constraint id="700" firstItem="676" firstAttribute="leading" secondItem="251" secondAttribute="leadingMargin"/>
-                            <constraint id="701" firstItem="251" firstAttribute="trailingMargin" secondItem="676" secondAttribute="trailing"/>
+                            <constraint id="228" firstItem="226" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39"/>
+                            <constraint id="230" firstItem="226" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
+                            <constraint id="231" firstItem="227" firstAttribute="top" secondItem="226" secondAttribute="bottom" constant="36"/>
+                            <constraint id="232" firstItem="227" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="233" firstItem="8bC-Xf-vdC" firstAttribute="trailingMargin" secondItem="227" secondAttribute="trailing"/>
+                            <constraint id="475" firstItem="8bC-Xf-vdC" firstAttribute="trailingMargin" secondItem="474" secondAttribute="trailing"/>
+                            <constraint id="476" firstItem="wfy-db-euE" firstAttribute="top" secondItem="474" secondAttribute="bottom" constant="20"/>
                         </constraints>
                     </view>
-                    <navigationItem title="Title" id="431" key="navigationItem"/>
                     <connections>
-                        <outlet property="AboutButton" destination="435" id="name-outlet-435"/>
-                        <outlet property="MyButton" destination="675" id="name-outlet-675"/>
-                        <outlet property="MyLabel" destination="676" id="name-outlet-676"/>
+                        <outlet property="MyButton" destination="226" id="name-outlet-226"/>
+                        <outlet property="MyText" destination="227" id="name-outlet-227"/>
+                        <outlet property="AboutButton" destination="474" id="name-outlet-474"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="252" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="-377"/>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
 </document>

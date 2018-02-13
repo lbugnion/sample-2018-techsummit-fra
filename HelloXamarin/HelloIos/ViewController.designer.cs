@@ -7,12 +7,11 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
-using UIKit;
 
 namespace HelloIos
 {
-    [Register ("MainViewController")]
-    partial class MainViewController
+    [Register ("ViewController")]
+    partial class ViewController
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -24,7 +23,7 @@ namespace HelloIos
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel MyLabel { get; set; }
+        UIKit.UILabel MyText { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
@@ -38,9 +37,9 @@ namespace HelloIos
                 MyButton = null;
             }
 
-            if (MyLabel != null) {
-                MyLabel.Dispose ();
-                MyLabel = null;
+            if (MyText != null) {
+                MyText.Dispose ();
+                MyText = null;
             }
         }
     }
